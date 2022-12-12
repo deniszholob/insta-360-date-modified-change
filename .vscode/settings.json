@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/screenshots/": true,
+        "**/.editorconfig": true,
+        "**/.gitignore": true,
+        "**/FUNDING.yml": true,
+        "**/LICENSE": true
+    },
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [80],
+    "explorer.sortOrderLexicographicOptions": "lower", // Case sensitive file ordering in tree
+    "workbench.iconTheme": "material-icon-theme"
+}

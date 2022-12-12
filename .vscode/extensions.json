@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "formulahendry.code-runner",
+        "streetsidesoftware.code-spell-checker",
+        "editorconfig.editorconfig",
+        "samverschueren.final-newline",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "adrianwilczynski.toggle-hidden"
+    ]
+}
