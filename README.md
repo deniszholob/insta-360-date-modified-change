@@ -12,7 +12,11 @@ matching names similar to "VID_20221203_150437_00_028_20221204102048_clip1.mp4"
 and updates the access and modified date from the extracted date/time from the file name.
 
 # Usage
-`python path/to/insta-360-date-modified-change/date-change.py`
+* Edit `date-change.py` to change the `directory`
+* Run the script `python3 path/to/insta-360-date-modified-change/date-change.py`
+    ```sh
+    python3 date-change.py
+    ```
 
 # Support Me
 If you find the cheat sheet or the source code useful, consider:

@@ -16,7 +16,7 @@ import re
 import time
 
 # Get the list of files in the directory
-directory = 'W:/path-to/insta360-exports-folder'
+directory = '/home/denis/Videos/insta360-exports'
 
 
 def main():
@@ -32,6 +32,8 @@ def main():
 def process_file(file):
     video_file = os.path.join(directory, file)
     date_time_match = match_video_file(file)
+
+    print(f'"{video_file}" - Path')
 
     if date_time_match:
         # Get the date/time from the regular expression match
@@ -66,9 +68,9 @@ def change_date_time_for_file(video_file, date_str, time_str):
         '%Y-%m-%d %H:%M:%S', time.localtime(new_date_modified))
 
     if date_modified != new_date_modified:
-        print(f'"{video_file}" - Failed to change the date created value. OLD: "{date_modified_str}", NEW: "{new_date_modified_str}"')
-    else:
         print(f'"{video_file}" - The date taken value has been successfully changed from "{date_modified_str}" to "{new_date_modified_str}"')
+    else:
+        print(f'"{video_file}" - Failed to change the date created value. OLD: "{date_modified_str}", NEW: "{new_date_modified_str}"')
 
 
 def match_video_file(file):
